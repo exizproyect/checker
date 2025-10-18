@@ -1,6 +1,6 @@
 let canAccess = true;
-
-if (!document.getElementById("rgxAFX") && canAccess === true) {
+if(canAccess === true) {
+if (!document.getElementById("rgxAFX")) {
   $("body").append(/* html */ `
     <button
       style="visibility: visible"
@@ -56,4 +56,6 @@ if (!document.getElementById("rgxAFX") && canAccess === true) {
       </div>
     </div>
   `);
+}
+
 }
